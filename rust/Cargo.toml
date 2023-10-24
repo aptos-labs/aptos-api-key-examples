@@ -4,7 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+anyhow = "1.0.75"
 aptos-sdk = { git = "https://github.com/aptos-labs/aptos-core", branch = "main" }
+tokio = { version = "1.33.0", features = ["rt", "macros"] }
+url = "2.4.1"
 
 [patch.crates-io]
 merlin = { git = "https://github.com/aptos-labs/merlin" }
