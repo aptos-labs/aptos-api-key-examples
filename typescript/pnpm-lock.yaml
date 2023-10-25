@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@aptos-labs/ts-sdk':
-    specifier: ^0.0.0
-    version: 0.0.0
+    specifier: ^0.0.1
+    version: 0.0.1
   cmd-ts:
     specifier: ^0.13.0
     version: 0.13.0
@@ -35,8 +35,8 @@ packages:
       - debug
     dev: false
 
-  /@aptos-labs/ts-sdk@0.0.0:
-    resolution: {integrity: sha512-l7jPbUmAtEXq2P5apAkK5b5iuoOTeUQDbYbAjh/NlamBR8cZYp6IF9an/0/DiSMEd6X00ioOMV1Kj9dKavyO0Q==}
+  /@aptos-labs/ts-sdk@0.0.1:
+    resolution: {integrity: sha512-bgOCjLXGXE0wLQ7FCHINoBGtId1QrrsneWkH3U7tYR132PjZ95LsavPhCCZargYg0/7M0dSin25mxvE8OUif/A==}
     engines: {node: '>=11.0.0'}
     dependencies:
       '@aptos-labs/aptos-client': 0.0.2
