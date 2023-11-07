@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@aptos-labs/ts-sdk':
-    specifier: ^0.0.2
-    version: 0.0.2
+    specifier: '=0.0.4'
+    version: 0.0.4
   cmd-ts:
     specifier: ^0.13.0
     version: 0.13.0
@@ -35,13 +35,14 @@ packages:
       - debug
     dev: false
 
-  /@aptos-labs/ts-sdk@0.0.2:
-    resolution: {integrity: sha512-B5Ndu8xJKxjfnrXA2PqOGTKDUZK9ISJvIaxQmGretCEv/G7XjShjKlywYWQgUCM8x3r+jAMeU1hb9zY4/Lo1PQ==}
+  /@aptos-labs/ts-sdk@0.0.4:
+    resolution: {integrity: sha512-oRmvmR/Ob1HbLHGCI3IcDoZmM22LHfi3eAlfmXio6IOEplkxbFvV5NpVvDX/uE9BWeP7r9rWGOoswrwT3jXRJg==}
     engines: {node: '>=11.0.0'}
     dependencies:
       '@aptos-labs/aptos-client': 0.0.2
       '@noble/curves': 1.2.0
       '@noble/hashes': 1.1.3
+      '@scure/bip32': 1.3.2
       '@scure/bip39': 1.1.0
       form-data: 4.0.0
       tweetnacl: 1.0.3
@@ -89,6 +90,14 @@ packages:
 
   /@scure/base@1.1.3:
     resolution: {integrity: sha512-/+SgoRjLq7Xlf0CWuLHq2LUZeL/w65kfzAPG5NH9pcmBhs+nunQTn4gvdwgMTIXnt9b2C/1SeL2XiysZEyIC9Q==}
+    dev: false
+
+  /@scure/bip32@1.3.2:
+    resolution: {integrity: sha512-N1ZhksgwD3OBlwTv3R6KFEcPojl/W4ElJOeCZdi+vuI5QmTFwLq3OFf2zd2ROpKvxFdgZ6hUpb0dx9bVNEwYCA==}
+    dependencies:
+      '@noble/curves': 1.2.0
+      '@noble/hashes': 1.3.2
+      '@scure/base': 1.1.3
     dev: false
 
   /@scure/bip39@1.1.0:
