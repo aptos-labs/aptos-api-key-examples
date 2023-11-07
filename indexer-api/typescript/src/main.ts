@@ -1,4 +1,4 @@
-import { Aptos, AptosConfig, ClientConfig } from "@aptos-labs/ts-sdk";
+import { Aptos, AptosConfig, ClientConfig, Network } from "@aptos-labs/ts-sdk";
 import { command, run, string, option } from 'cmd-ts';
 
 const main = async ({ indexerApiUrl, apiKey }: { indexerApiUrl: string, apiKey: string }) => {

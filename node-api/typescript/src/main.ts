@@ -1,11 +1,11 @@
-import { Aptos, AptosConfig, ClientConfig, Network } from "@aptos-labs/ts-sdk";
+import { Aptos, AptosConfig, ClientConfig } from "@aptos-labs/ts-sdk";
 import { command, run, string, option } from 'cmd-ts';
 
 const main = async ({ nodeApiUrl, apiKey }: { nodeApiUrl: string, apiKey: string }) => {
   const clientConfig: ClientConfig = {
     TOKEN: apiKey
   };
-  const config = new AptosConfig({ fullnode: nodeApiUrl, network: Network.MAINNET, clientConfig });
+  const config = new AptosConfig({ fullnode: nodeApiUrl, clientConfig });
   const aptos = new Aptos(config);
 
   const response = await aptos.account.getAccountInfo({ accountAddress: "0x1" });
